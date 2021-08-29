@@ -35,7 +35,21 @@ to the require section of your `composer.json` file.
         'disqus' => ['class' => 'panix\mod\disqus\Module'],
     ],
 ```
-#### Migrate
+#### Usage
+##### Run widget
 ```
-php yii migrate --migrationPath=vendor/panix/mod-disqus/migrations
+echo \panix\mod\disqus\DisqusWidget::widget([
+    'id' => '', //require
+    'url' => '', //require
+    'domain' => '', //require if not usage module settings
+]);
+```
+
+##### Run counter
+```
+echo Html::a('','<URL>#disqus_thread',[
+    'data-disqus-identifier' => '<ID>', //require
+    'class' => 'disqus-comment-count'
+]);
+
 ```
