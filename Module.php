@@ -1,6 +1,6 @@
 <?php
 
-namespace panix\mod\pages;
+namespace panix\mod\disqus;
 
 use Yii;
 use panix\engine\WebModule;
