@@ -6,7 +6,7 @@ use Yii;
 use panix\engine\WebModule;
 use yii\base\BootstrapInterface;
 
-class Module extends WebModule implements BootstrapInterface
+class Module extends WebModule
 {
 
     public $icon = 'edit';
