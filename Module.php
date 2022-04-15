@@ -20,7 +20,8 @@ class Module extends WebModule
                         'label' => Yii::t('disqus/default', 'MODULE_NAME'),
                         'url' => ['/admin/disqus'],
                         'icon' => $this->icon,
-                        'visible' => Yii::$app->user->can('/disqus/admin/default/index') || Yii::$app->user->can('/disqus/admin/default/*')
+						'visible'=>false
+                        //'visible' => Yii::$app->user->can('/disqus/admin/default/index') || Yii::$app->user->can('/disqus/admin/default/*')
                     ],
                 ],
             ],

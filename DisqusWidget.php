@@ -36,6 +36,7 @@ class DisqusWidget extends Widget
 
             $view->registerJsFile("//{$this->domain}.disqus.com/count.js", ['async'=>'async','id'=>'dsq-count-scr','position' => $view::POS_END]);
             $view->registerJs("
+
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
@@ -61,10 +62,8 @@ class DisqusWidget extends Widget
 
     public function run()
     {
-
         return Html::tag('div', '', ['id' => 'disqus_thread']);
-
-
     }
+
 
 }
